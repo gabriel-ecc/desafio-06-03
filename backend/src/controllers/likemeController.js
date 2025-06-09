@@ -3,7 +3,7 @@ import { getAllPostsModel, createPostModel } from "../models/likemeModel.js";
 export const getAllPostController = async (req, res) => {
   try {
     const posts = await getAllPostsModel();
-    res.json({ posts });
+    res.json(posts);
   } catch (error) {
     res.json({ message: error.message });
   }
