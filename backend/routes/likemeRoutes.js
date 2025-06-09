@@ -4,9 +4,9 @@ import {
   getAllPostController,
 } from "../src/controllers/likemeController.js";
 
-const router = Router();
+const rutas = Router();
 
-router.get("/posts", getAllPostController);
-router.post("/posts", createPostController);
+rutas.get("/posts", getAllPostController);
+rutas.post("/posts", createPostController);
 
-export default router;
+export default rutas;
